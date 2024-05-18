@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import Home from "./Home/Home.jsx";
 import Blog from "./blog/Blog.jsx";
+import Shop from "./shop/Shop.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import "swiper/css";
@@ -23,6 +24,7 @@ const router = createBrowserRouter([
     children: [
       { path: "/", element: <Home /> },
       { path: "/blog", element: <Blog /> },
+      { path: "/shop", element: <Shop /> },
     ],
   },
 ]);
